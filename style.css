@@ -99,11 +99,10 @@ button:focus {
 
     button {
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 75px;
         background-color: rgba(131, 131, 131, 0.3);
         color: rgb(226, 226, 226);
-        align-self: center;
     }
 
     button:focus,
@@ -121,6 +120,7 @@ button:focus {
     .orange:hover {
         background-color: rgb(226, 226, 226);
         color: rgb(224, 129, 4);
+        padding-right: 5px;
     }
     .dark {
         color: rgb(255, 255, 255);
