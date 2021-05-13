@@ -50,6 +50,7 @@ body {
 }
 
 button {
+    padding: 0 20px 0 20px;
     background-color: rgba(255, 255, 255, 0.1);
     color: rgb(203, 229, 253);
     border: none;
@@ -115,13 +116,11 @@ button:focus {
         color: rgb(226, 226, 226);
         background-color: rgb(224, 129, 4);
         font-size: 35px;
-        padding: 0 20px 0 20px;
     }
     .orange:focus,
     .orange:hover {
         background-color: rgb(226, 226, 226);
         color: rgb(224, 129, 4);
-        padding: 0 20px 0 20px;
     }
     .dark {
         color: rgb(255, 255, 255);
