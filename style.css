@@ -99,6 +99,8 @@ button:focus {
 
     button {
         border-radius: 50%;
+        width: 80px;
+        height: 80px;
         /* margin: 8px; */
         background-color: rgba(131, 131, 131, 0.3);
         color: rgb(226, 226, 226);
