@@ -83,10 +83,10 @@ const updateResult = () => {
 
 const addNumber = (number) => {
     if (number === "•") {
-        if (currentDisplay.includes(",")) {
+        if (currentDisplay.includes(".")) {
             return;
         }
-        number = ",";
+        number = ".";
     }
     currentDisplay = currentDisplay.toString() + number.toString();
 };
