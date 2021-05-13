@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #8a792e 20%, #32acfdf1 100%);
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    min-height: 100vh;
+}
+
+.score {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px -2px 0px 0px rgba(253, 253, 253, 0.8) inset;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-action {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.current-action {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(203, 229, 253);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(253, 253, 253, 0.2);
+    color: rgb(254, 254, 255);
+}
+
+button:focus {
+    background-color: rgba(253, 253, 253, 0.2);
+    color: rgb(254, 254, 255);
+}
+
+.orange {
+    color: rgb(255, 208, 0);
+}
+.orange:hover {
+    background-color: rgba(255, 208, 0, 0.5);
+}
+.dark {
+    color: rgb(70, 70, 107);
+}
+
+.dark:hover {
+    background-color: rgba(61, 65, 110, 0.2);
+}
+
+.col-two {
+    grid-column: span 2;
+}
+
+.row-two {
+    grid-row: span 2;
+}
+
+@media (max-width: 642px) {
+    body {
+        background: black;
+    }
+    .score {
+        margin-bottom: 8px;
+    }
+
+    button {
+        border-radius: 50%;
+        margin: 8px;
+        background-color: rgba(131, 131, 131, 0.3);
+        color: rgb(226, 226, 226);
+    }
+
+    button:focus,
+    button:hover {
+        background-color: rgba(253, 253, 253, 0.6);
+        color: rgb(254, 254, 255);
+    }
+
+    .orange {
+        color: rgb(226, 226, 226);
+        background-color: rgb(224, 129, 4);
+        font-size: 35px;
+    }
+    .orange:focus,
+    .orange:hover {
+        background-color: rgb(226, 226, 226);
+        color: rgb(224, 129, 4);
+    }
+    .dark {
+        color: rgb(255, 255, 255);
+        background-color: rgb(56, 85, 129);
+    }
+
+    .dark:focus,
+    .dark:hover {
+        color: rgb(56, 85, 129);
+        background-color: rgb(255, 255, 255);
+    }
+}
