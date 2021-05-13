@@ -115,12 +115,13 @@ button:focus {
         color: rgb(226, 226, 226);
         background-color: rgb(224, 129, 4);
         font-size: 35px;
+        padding-right: 40px;
     }
     .orange:focus,
     .orange:hover {
         background-color: rgb(226, 226, 226);
         color: rgb(224, 129, 4);
-        padding-right: 5px;
+        padding-right: 40px;
     }
     .dark {
         color: rgb(255, 255, 255);
