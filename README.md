@@ -21,3 +21,5 @@ Mobile
 Here you will find a link to calculator made by me: (https://pawel-serafinko.github.io/calculator/)
 
 ## What I have learned and what obstacles I encountered
+
+A project where I could practice the basics of CSS Grid. Nowadays, every Java Script exercise is important to me. The challenge was the emerging "wrong operation" alert with unacceptable action.
