@@ -1,10 +1,10 @@
-const numbers = document.querySelectorAll(".number");
-const operators = document.querySelectorAll(".operator");
-const del = document.querySelector(".delete");
 const ac = document.querySelector(".ac");
-const equals = document.querySelector(".equals");
-const previousAction = document.querySelector(".previous-action");
 const currentAction = document.querySelector(".current-action");
+const del = document.querySelector(".delete");
+const equals = document.querySelector(".equals");
+const operators = document.querySelectorAll(".operator");
+const previousAction = document.querySelector(".previous-action");
+const numbers = document.querySelectorAll(".number");
 
 let currentDisplay = "";
 let precedingAction = "";
@@ -99,24 +99,24 @@ const clearResult = () => {
     currentDisplay = "0";
     precedingAction = "";
     currentPress = undefined;
-    function clearWron() {
+    function clearWrong() {
         currentDisplay = "";
         precedingAction = "";
         currentPress = undefined;
     }
-    setTimeout(clearWron, 1);
+    setTimeout(clearWrong, 1);
 };
 
 const wrongOperation = () => {
     currentDisplay = "wrong operation";
     precedingAction = "";
     currentPress = undefined;
-    function clearWron() {
+    function clearWrong() {
         currentDisplay = "";
         precedingAction = "";
         currentPress = undefined;
     }
-    setTimeout(clearWron, 1);
+    setTimeout(clearWrong, 1);
 };
 
 numbers.forEach((number) => {
